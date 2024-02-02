@@ -1,0 +1,870 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* ! Header */
+
+header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(153, 0, 0);
+  padding: 20px;
+}
+
+header > h2 {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+header > ul {
+  display: flex;
+  gap: 20px;
+}
+
+header > ul > li {
+  list-style-type: none;
+}
+
+header > ul > li > a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  font-size: 20px;
+  transition: color 0.5s ease;
+}
+
+header > ul > li > a:hover,
+header > ul > li > a:active {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ! Fin Header */
+
+/* ! Accueil */
+
+.accueil {
+  position: relative;
+  margin: auto;
+  background-image: url(img/pizza-2810589_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+}
+
+.accueil > h2 {
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 6rem;
+}
+
+.accueil > button {
+  color: white;
+  background-color: rgb(153, 0, 0);
+  padding: 15px 25px;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: solid 1px black;
+  border-radius: 30px;
+  transition: color 0.5s ease;
+}
+
+.accueil > button:hover,
+.accueil > button:active {
+  border: solid 2px rgb(153, 0, 0);
+  background-color: white;
+  color: rgb(153, 0, 0);
+  cursor: pointer;
+}
+
+/* ! Fin Accueil */
+
+/* ! La carte */
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* text-align: center; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.carte > h2 {
+  font-family: "Pacifico", cursive;
+  color: rgb(0, 153, 0);
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* border: solid 1px black; */
+}
+
+.entree,
+.plats,
+.desserts {
+  text-align: center;
+}
+
+.entree > h4,
+.plats > h4,
+.desserts > h4 {
+  font-family: "Pacifico", cursive;
+  color: rgb(0, 153, 0);
+  font-size: 2.3rem;
+}
+
+.entree > img,
+.plats > img,
+.desserts > img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.entree > p,
+.plats > p,
+.desserts > p {
+  font-size: 1.9rem;
+  margin-top: 10px;
+  /* align-items: start; */
+  /* margin: 0;
+  padding: 0;
+  text-align: center; */
+}
+
+.entree > p > span,
+.plats > p > span,
+.desserts > p > span {
+  font-weight: bold;
+  /* align-items: start; */
+  /* margin: 0;
+  padding: 0;
+  text-align: center; */
+}
+
+/* ! Fin carte */
+
+/* ! Nos Services */
+
+.nos-services {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(153, 0, 0);
+  padding-bottom: 120px;
+}
+
+.nos-services > h2 {
+  font-family: "Pacifico", cursive;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.services > article {
+  width: 33%;
+  margin: 1%;
+}
+
+.services > article > img {
+  width: 100%;
+  height: auto;
+}
+
+.box-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  /* height: 520px; */
+  background-color: rgb(92, 0, 0);
+}
+
+.services > article > p {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ! Fin Nos Services */
+
+/* ! Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 900px;
+  /* border: solid 1px black; */
+  margin-top: 15px;
+}
+
+.contact > h2 {
+  font-family: "Pacifico", cursive;
+  color: rgb(0, 153, 0);
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: solid 1px black; */
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.container-contact > .coordonnee,
+.container-contact > .map-image {
+  width: 39%;
+  margin: 1%;
+  /* border: solid 1px violet; */
+}
+
+.coordonnee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: solid 2px black; */
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon-text > i {
+  font-size: 64px;
+  margin-right: 10px;
+  justify-content: start;
+  color: rgb(51, 203, 245);
+}
+
+.icon-text > p {
+  font-size: 2rem;
+  color: rgb(0, 153, 0);
+  /* text-align: center; */
+  margin-left: 40px;
+}
+
+.icon-text > p > a {
+  color: rgb(0, 153, 0);
+  text-decoration: none;
+}
+
+.map-image > a > img {
+  width: 100%;
+}
+
+/* ! Fin Contact */
+
+/* ! Footer */
+
+footer {
+  background-color: rgb(92, 0, 0);
+  width: 100%;
+  height: 130px;
+  color: white;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+/* ! Fin Footer */
+
+/*  ! RESPONSIVE */
+
+/* ? HEADER */
+
+/* 480px et 576px */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  header > h2 {
+    font-size: 1.3rem;
+  }
+
+  header > ul > li > a {
+    font-size: 15px;
+  }
+}
+
+/* 70px et 480px */
+@media screen and (min-width: 70px) and (max-width: 480px) {
+  header > h2 {
+    font-size: 1.3rem;
+  }
+
+  header > ul > li > a {
+    font-size: 15px;
+  }
+}
+
+/* ? FIN HEADER */
+
+/* ? ACCUEIL */
+
+/* 992px et 768px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .accueil > h2 {
+    font-size: 5.5rem;
+    margin: 15% auto;
+  }
+
+  .accueil > button {
+    margin-top: 10%;
+  }
+}
+
+/* 768px et 576px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .accueil > h2 {
+    font-size: 5rem;
+    margin: 15% auto;
+  }
+
+  .accueil > button {
+    margin-top: 20%;
+    font-size: 1.7rem;
+  }
+}
+
+/* 645px et 576px */
+@media screen and (min-width: 576px) and (max-width: 645px) {
+  .accueil > button {
+    width: 50%;
+  }
+}
+
+/* 480px et 576px */
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .accueil > h2 {
+    font-size: 5rem;
+    margin: 25% auto;
+  }
+
+  .accueil > button {
+    margin-top: 20%;
+    font-size: 1.7rem;
+    width: 60%;
+  }
+}
+
+/* 70px et 480px */
+@media screen and (min-width: 70px) and (max-width: 480px) {
+  .accueil > h2 {
+    font-size: 3.5rem;
+    margin: 30% auto;
+  }
+
+  .accueil > button {
+    margin-top: 60%;
+    font-size: 1.1rem;
+    width: 45%;
+  }
+}
+
+/* ? FIN ACCUEIL */
+
+/* ? CARTE */
+
+/* 1100px et 1400px */
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1.6rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.4rem;
+  }
+}
+
+/* 900px et 1100px */
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1.3rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.3rem;
+  }
+}
+
+/* 700px et 900px */
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .entree > h4,
+  .plats > h4,
+  .desserts > h4 {
+    font-size: 1.8rem;
+  }
+
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.2rem;
+  }
+}
+
+/* 500px et 700px */
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entree,
+  .plats,
+  .desserts {
+    margin-bottom: 40px;
+  }
+
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1.5rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.4rem;
+  }
+}
+
+/* 400px et 500px */
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .carte > h2 {
+    font-size: 2.5rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entree,
+  .plats,
+  .desserts {
+    margin-bottom: 40px;
+  }
+
+  .entree > h4,
+  .plats > h4,
+  .desserts > h4 {
+    font-size: 1.6rem;
+  }
+
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1.5rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.4rem;
+  }
+}
+
+/* 70px et 400px */
+@media screen and (min-width: 70px) and (max-width: 400px) {
+  .carte > h2 {
+    font-size: 2.4rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entree,
+  .plats,
+  .desserts {
+    margin-bottom: 30px;
+  }
+
+  .entree > h4,
+  .plats > h4,
+  .desserts > h4 {
+    font-size: 1.6rem;
+  }
+
+  .entree > p,
+  .plats > p,
+  .desserts > p {
+    font-size: 1.2rem;
+  }
+
+  .entree > p > span,
+  .plats > p > span,
+  .desserts > p > span {
+    font-size: 1.2rem;
+  }
+}
+
+/* ? FIN CARTE */
+
+/* ? SERVICE */
+
+/* 1100px et 1300px */
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .services > article > p {
+    font-size: 1.4rem;
+  }
+}
+
+/* 700px et 1100px */
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .services > article > p {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+/* 550px et 700px */
+@media screen and (min-width: 550px) and (max-width: 700px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services > article {
+    width: 70%;
+    margin: 1%;
+  }
+
+  .services > article > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-text {
+    width: 100%;
+    height: 300px;
+    margin: 10px auto;
+  }
+
+  .services > article > p {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+/* 450px et 550px */
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nos-services > h2 {
+    font-size: 2.5rem;
+  }
+
+  .services > article {
+    width: 70%;
+    margin: 1%;
+  }
+
+  .services > article > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-text {
+    width: 100%;
+    height: 250px;
+    margin: 10px auto;
+  }
+
+  .services > article > p {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+
+/* 350px et 450px */
+@media screen and (min-width: 350px) and (max-width: 450px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nos-services > h2 {
+    font-size: 2.3rem;
+  }
+
+  .services > article {
+    width: 70%;
+    margin: 1%;
+  }
+
+  .services > article > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-text {
+    width: 100%;
+    height: 210px;
+    margin: 10px auto;
+  }
+
+  .services > article > p {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}
+
+/* 70px et 350px */
+@media screen and (min-width: 70px) and (max-width: 350px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nos-services > h2 {
+    font-size: 2.3rem;
+  }
+
+  .services > article {
+    width: 70%;
+    margin: 1%;
+  }
+
+  .services > article > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-text {
+    width: 100%;
+    height: 190px;
+    margin: 10px auto;
+  }
+
+  .services > article > p {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}
+
+/* ? FIN SERVICE */
+
+/* ? CONTACT */
+
+/* 1150px et 1370px */
+@media screen and (min-width: 1150px) and (max-width: 1370px) {
+  .contact {
+    height: 700px;
+  }
+}
+
+/* 800px et 1150px */
+@media screen and (min-width: 800px) and (max-width: 1150px) {
+  .contact {
+    height: 650px;
+  }
+
+  .contact > h2 {
+    font-size: 2.5rem;
+  }
+
+  .icon-text > p {
+    font-size: 1.5rem;
+  }
+
+  .icon-text > i {
+    font-size: 40px;
+  }
+}
+
+/* 400px et 800px */
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .contact {
+    height: 900px;
+  }
+
+  .contact > h2 {
+    font-size: 2.5rem;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 40px; */
+  }
+
+  .container-contact > .coordonnee,
+  .container-contact > .map-image {
+    width: 70%;
+    margin: 1%;
+    /* border: solid 1px violet; */
+    height: 300px;
+  }
+
+  .map-image > a > img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+
+  .icon-text > p {
+    font-size: 1.5rem;
+  }
+
+  .icon-text > i {
+    font-size: 40px;
+  }
+}
+
+/* 70px et 400px */
+@media screen and (min-width: 70px) and (max-width: 400px) {
+  .contact {
+    height: 850px;
+  }
+
+  .contact > h2 {
+    font-size: 2.1rem;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 40px; */
+  }
+
+  .container-contact > .coordonnee,
+  .container-contact > .map-image {
+    width: 80%;
+    margin: 1%;
+    /* border: solid 1px violet; */
+    height: 300px;
+  }
+
+  .map-image > a > img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+
+  .icon-text > p {
+    font-size: 1.2rem;
+  }
+
+  .icon-text > i {
+    font-size: 30px;
+  }
+}
+
+/* ? FIN CONTACT */
+
+/* ? FOOTER */
+
+/* 600px et 800px */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  footer {
+    height: 100px;
+    font-size: 1.3rem;
+  }
+}
+
+/* 500px et 600px */
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  footer {
+    height: 90px;
+    font-size: 1.1rem;
+  }
+}
+
+/* 400px et 500px */
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  footer {
+    height: 80px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 300px et 400px */
+@media screen and (min-width: 70px) and (max-width: 400px) {
+  footer {
+    height: 70px;
+    font-size: 0.6rem;
+  }
+}
+
+/* ? FIN FOOTER */
